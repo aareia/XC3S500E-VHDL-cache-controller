@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.xst" -ofn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.syr" 
+xst -intstyle ise -ifn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.xst" -ofn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.syr" 
+xst -intstyle ise -ifn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.xst" -ofn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.syr" 
+xst -intstyle ise -ifn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.xst" -ofn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Tutorial1.ucf -p xc3s500e-fg320-5 topLevelTest.ngc topLevelTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o topLevelTest_map.ncd topLevelTest.ngd topLevelTest.pcf 
+par -w -intstyle ise -ol high -t 1 topLevelTest_map.ncd topLevelTest.ncd topLevelTest.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml topLevelTest.twx topLevelTest.ncd -o topLevelTest.twr topLevelTest.pcf -ucf Tutorial1.ucf 
+bitgen -intstyle ise -f topLevelTest.ut topLevelTest.ncd 
+xst -intstyle ise -ifn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.xst" -ofn "/home/student1/scgoddar/Documents/COE758/Tutorial4a/topLevelTest.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Tutorial1.ucf -p xc3s500e-fg320-5 topLevelTest.ngc topLevelTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o topLevelTest_map.ncd topLevelTest.ngd topLevelTest.pcf 
+par -w -intstyle ise -ol high -t 1 topLevelTest_map.ncd topLevelTest.ncd topLevelTest.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml topLevelTest.twx topLevelTest.ncd -o topLevelTest.twr topLevelTest.pcf -ucf Tutorial1.ucf 
+bitgen -intstyle ise -f topLevelTest.ut topLevelTest.ncd 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc Tutorial1.ucf -p xc3s500e-fg320-5 topLevelTest.ngc topLevelTest.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o topLevelTest_map.ncd topLevelTest.ngd topLevelTest.pcf 
+par -w -intstyle ise -ol high -t 1 topLevelTest_map.ncd topLevelTest.ncd topLevelTest.pcf 
+bitgen -intstyle ise -f topLevelTest.ut topLevelTest.ncd 
+xst -intstyle ise -ifn "/home/student2/rmsaad/COE758/Project1/topLevelTest.xst" -ofn "/home/student2/rmsaad/COE758/Project1/topLevelTest.syr" 
+xst -intstyle ise -ifn "/home/student2/rmsaad/COE758/Project1/topLevelTest.xst" -ofn "/home/student2/rmsaad/COE758/Project1/topLevelTest.syr" 
+xst -intstyle ise -ifn "/home/student2/rmsaad/COE758/Project1/topLevelTest.xst" -ofn "/home/student2/rmsaad/COE758/Project1/topLevelTest.syr" 

@@ -1,0 +1,4 @@
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/Cache_SRAM.vhi -module Cache_SRAM -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Cache_SRAM.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/Cache_SRAM.vhi -module Cache_SRAM -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work Cache_SRAM.vhdl 
+vhdtdtfi -lib work Cache_SRAM.vhdl -prj Tutorial1 -o Cache_SRAM.spl -module Cache_SRAM -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Cache_SRAM.spl /home/student2/rmsaad/COE758/Project1/Cache_SRAM.sym 

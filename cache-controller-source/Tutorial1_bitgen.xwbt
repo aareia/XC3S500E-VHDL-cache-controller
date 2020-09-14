@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/student1/scgoddar/Documents/COE758/Tutorial1/tutorial1.ncd
+OUTFILE=/home/student1/scgoddar/Documents/COE758/Tutorial1/tutorial1.bit
+FAMILY=Spartan3E
+PART=xc3s500e-5fg320
+WORKINGDIR=/home/student1/scgoddar/Documents/COE758/Tutorial1
+LICENSE=ISE
+USER_INFO=174208431_175233744_210711282_809

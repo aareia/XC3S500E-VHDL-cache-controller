@@ -1,0 +1,2 @@
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/SDRAM_Cont.vhi -module SDRAM_Cont -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work SDRAM_Cont.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/SDRAM_Cont.vhi -module SDRAM_Cont -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work SDRAM_Cont.vhdl 

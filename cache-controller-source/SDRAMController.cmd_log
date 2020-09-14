@@ -1,0 +1,3 @@
+vhdtdtfi -lib work SDRAMController.vhdl -prj Tutorial1 -o SDRAMController.spl -module SDRAMController -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SDRAMController.spl /home/student2/rmsaad/COE758/Project1/SDRAMController.sym 
+vhdtdtfi -prj Tutorial1 -o /home/student2/rmsaad/COE758/Project1/SDRAMController.vhi -module SDRAMController -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work SDRAMController.vhdl 

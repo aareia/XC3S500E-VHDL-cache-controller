@@ -1,0 +1,16 @@
+Release 13.4 - par O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Tue Sep 17 13:33:55 2019
+
+All signals are completely routed.
+
+WARNING:ParHelpers:361 - There are 4 loadless signals in this design. This design will cause Bitgen to issue DRC
+   warnings.
+
+   switches<1>_IBUF
+   switches<2>_IBUF
+   switches<3>_IBUF
+   system_vio/U0/I_VIO/reset_f_edge/iDOUT<1>
+
+

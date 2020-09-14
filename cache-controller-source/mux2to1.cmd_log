@@ -1,0 +1,7 @@
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 
+vhdtdtfi -prj Tutorial1 -o /home/student1/scgoddar/Documents/COE758/Project1/mux2to1.vhi -module mux2to1 -template /CMC/tools/xilinx/13.4/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work mux2to1.vhdl 

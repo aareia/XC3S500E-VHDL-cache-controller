@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/student1/scgoddar/Documents/COE758/Tutorial1/impact.xsl
+OUTFILE=/home/student1/scgoddar/Documents/COE758/Tutorial1/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/student1/scgoddar/Documents/COE758/Tutorial1
+LICENSE=iMPACT
+USER_INFO=iMPACT

@@ -1,0 +1,8 @@
+[Inputs]
+clk
+WEN
+=ADD[7:0]=
+=DIN[7:0]=
+[Outputs]
+=DOUT[7:0]=
+[BiDir]

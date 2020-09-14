@@ -1,0 +1,961 @@
+Release 13.4 - xst O.87xd (lin64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.05 secs
+ 
+--> 
+Reading design: CacheController.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CacheController.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CacheController"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : CacheController
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : NO
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/CacheController is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/CacheController.vhdl", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl".
+WARNING:HDLParsers:3607 - Unit work/CacheController/Behavioral is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/CacheController.vhdl", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl".
+WARNING:HDLParsers:3607 - Unit work/CPU_gen is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/CPU_gen.vhdl", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/CPU_gen.vhdl".
+WARNING:HDLParsers:3607 - Unit work/CPU_gen/Behavioral is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/CPU_gen.vhdl", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/CPU_gen.vhdl".
+WARNING:HDLParsers:3607 - Unit work/icon is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/icon.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/icon.vhd".
+WARNING:HDLParsers:3607 - Unit work/icon/icon_a is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/icon.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/icon.vhd".
+WARNING:HDLParsers:3607 - Unit work/ila is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/ila.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/ila.vhd".
+WARNING:HDLParsers:3607 - Unit work/ila/ila_a is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/ila.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/ila.vhd".
+WARNING:HDLParsers:3607 - Unit work/vio is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/vio.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/vio.vhd".
+WARNING:HDLParsers:3607 - Unit work/vio/vio_a is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/vio.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/vio.vhd".
+WARNING:HDLParsers:3607 - Unit work/SDRAMController is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/SDRAMController.vhdl", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/SDRAMController.vhdl".
+WARNING:HDLParsers:3607 - Unit work/SDRAMController/Behavioral is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/SDRAMController.vhdl", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/SDRAMController.vhdl".
+WARNING:HDLParsers:3607 - Unit work/SRAM is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/SRAM.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/SRAM.vhd".
+WARNING:HDLParsers:3607 - Unit work/SRAM/SRAM_a is now defined in a different file.  It was defined in "/home/student1/scgoddar/Documents/COE758/Projectv4/ipcore_dir/SRAM.vhd", and is now defined in "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/SRAM.vhd".
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/CPU_gen.vhdl" in Library work.
+Entity <cpu_gen> compiled.
+Entity <cpu_gen> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/SDRAMController.vhdl" in Library work.
+Entity <sdramcontroller> compiled.
+Entity <sdramcontroller> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/SRAM.vhd" in Library work.
+Architecture sram_a of Entity sram is up to date.
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/icon.vhd" in Library work.
+Architecture icon_a of Entity icon is up to date.
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/ila.vhd" in Library work.
+Architecture ila_a of Entity ila is up to date.
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/ipcore_dir/vio.vhd" in Library work.
+Architecture vio_a of Entity vio is up to date.
+Compiling vhdl file "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl" in Library work.
+Architecture behavioral of Entity cachecontroller is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <CacheController> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <CPU_gen> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <SDRAMController> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <CacheController> in library <work> (Architecture <behavioral>).
+WARNING:Xst:2211 - "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl" line 167: Instantiating black box module <SRAM>.
+WARNING:Xst:2211 - "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl" line 175: Instantiating black box module <icon>.
+WARNING:Xst:2211 - "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl" line 180: Instantiating black box module <ila>.
+WARNING:Xst:2211 - "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl" line 188: Instantiating black box module <vio>.
+Entity <CacheController> analyzed. Unit <CacheController> generated.
+
+Analyzing Entity <CPU_gen> in library <work> (Architecture <behavioral>).
+Entity <CPU_gen> analyzed. Unit <CPU_gen> generated.
+
+Analyzing Entity <SDRAMController> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "/home/student2/rmsaad/COE758/Projectv4/SDRAMController.vhdl" line 60: Index value(s) does not match array range, simulation mismatch.
+WARNING:Xst:790 - "/home/student2/rmsaad/COE758/Projectv4/SDRAMController.vhdl" line 63: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:2679 - Register <last4> in unit <SDRAMController> has a constant value of 11111 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <first4> in unit <SDRAMController> has a constant value of 0110 during circuit operation. The register is replaced by logic.
+Entity <SDRAMController> analyzed. Unit <SDRAMController> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <CPU_gen>.
+    Related source file is "/home/student2/rmsaad/COE758/Projectv4/CPU_gen.vhdl".
+    Found finite state machine <FSM_0> for signal <st1>.
+    -----------------------------------------------------------------------
+    | States             | 6                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 000                                            |
+    | Power Up State     | 000                                            |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8x25-bit ROM for signal <patOut>.
+WARNING:Xst:737 - Found 1-bit latch for signal <updPat>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+WARNING:Xst:737 - Found 1-bit latch for signal <cs>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 3-bit up counter for signal <patCtrl>.
+    Found 1-bit register for signal <rReg1>.
+    Found 1-bit register for signal <rReg2>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <CPU_gen> synthesized.
+
+
+Synthesizing Unit <SDRAMController>.
+    Related source file is "/home/student2/rmsaad/COE758/Projectv4/SDRAMController.vhdl".
+WARNING:Xst:647 - Input <ADDR<11:5>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:646 - Signal <last4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <first4> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Using one-hot encoding for signal <counter>.
+    Found 8-bit register for signal <DOUT>.
+    Found 2-bit register for signal <counter>.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_0$mux0000> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_1$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_1$mux0032> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_2$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_2$mux0032> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_3$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_3$mux0032> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_4$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_4$mux0032> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_5$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_5$mux0032> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_6$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_6$mux0032> created at line 63.
+    Found 1-bit 32-to-1 multiplexer for signal <DOUT_7$mux0000> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0001> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0002> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0003> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0004> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0005> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0006> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0007> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0008> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0009> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0010> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0011> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0012> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0013> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0014> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0015> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0016> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0017> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0018> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0019> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0020> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0021> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0022> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0023> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0024> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0025> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0026> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0027> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0028> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0029> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0030> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0031> created at line 63.
+    Found 1-bit 8-to-1 multiplexer for signal <DOUT_7$mux0032> created at line 63.
+    Found 256-bit register for signal <mem_sig<1>>.
+    Found 256-bit register for signal <mem_sig<2>>.
+    Found 256-bit register for signal <mem_sig<3>>.
+    Found 256-bit register for signal <mem_sig<4>>.
+    Found 256-bit register for signal <mem_sig<5>>.
+    Found 256-bit register for signal <mem_sig<6>>.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem_sig<1>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem_sig<2>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem_sig<3>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem_sig<4>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem_sig<5>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+INFO:Xst:738 - HDL ADVISOR - 256 flip-flops were inferred for signal <mem_sig<6>>. You may be trying to describe a RAM in a way that is incompatible with block and distributed RAM resources available on Xilinx devices, or with a specific template that is not supported. Please review the Xilinx resources documentation and the XST user manual for coding guidelines. Taking advantage of RAM resources will lead to improved device usage and reduced synthesis time.
+    Summary:
+	inferred 1546 D-type flip-flop(s).
+	inferred 232 Multiplexer(s).
+Unit <SDRAMController> synthesized.
+
+
+Synthesizing Unit <CacheController>.
+    Related source file is "/home/student2/rmsaad/COE758/Projectv4/CacheController.vhdl".
+WARNING:Xst:646 - Signal <vioOut<1>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <trig0<0>> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:646 - Signal <offset> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <ilaTrig> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 8x8-bit single-port RAM <Mram_sTAG> for signal <sTAG>.
+    Using one-hot encoding for signal <startup>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit adder for signal <counter$addsub0000> created at line 290.
+    Found 8-bit register for signal <Cpu_Din_Sig>.
+    Found 3-bit register for signal <Cpu_Index_Sig>.
+    Found 1-bit register for signal <Cpu_Rdy_Sig>.
+    Found 8-bit register for signal <Cpu_Tag_Sig>.
+    Found 32-bit up counter for signal <delay_counter>.
+    Found 8-bit register for signal <DirtyByte>.
+    Found 1-bit 8-to-1 multiplexer for signal <DirtyByte$mux0000> created at line 228.
+    Found 1-bit register for signal <HitMiss>.
+    Found 32-bit register for signal <offset_counter>.
+    Found 32-bit adder for signal <offset_counter$addsub0000>.
+    Found 8-bit register for signal <sADD>.
+    Found 8-bit register for signal <sDin>.
+    Found 16-bit register for signal <SDRAM_ADD>.
+    Found 8-bit register for signal <SDRAM_Din>.
+    Found 1-bit register for signal <SDRAM_MSTRB>.
+    Found 1-bit register for signal <SDRAM_W_R>.
+    Found 2-bit register for signal <startup>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit comparator equal for signal <state$cmp_eq0007> created at line 221.
+    Found 32-bit comparator greatequal for signal <state$cmp_ge0001> created at line 309.
+    Found 1-bit register for signal <sWen<0>>.
+    Found 8-bit register for signal <ValidByte>.
+    Found 1-bit 8-to-1 multiplexer for signal <ValidByte$mux0000> created at line 221.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   1 Counter(s).
+	inferred 150 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+	inferred   2 Multiplexer(s).
+Unit <CacheController> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port RAM                               : 1
+# ROMs                                                 : 1
+ 8x25-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 257
+ 1-bit register                                        : 55
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 2
+ 4-bit register                                        : 1
+ 8-bit register                                        : 196
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 2
+ 32-bit comparator greatequal                          : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 234
+ 1-bit 32-to-1 multiplexer                             : 8
+ 1-bit 8-to-1 multiplexer                              : 226
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <myCPU_gen/st1/FSM> on signal <st1[1:6]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 000   | 000001
+ 001   | 000010
+ 010   | 000100
+ 011   | 001000
+ 100   | 010000
+ 101   | 100000
+-------------------
+WARNING:Xst:1426 - The value init of the FF/Latch startup_0 hinder the constant cleaning in the block CacheController.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch counter_0 hinder the constant cleaning in the block SDRAM.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <state_3> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <counter_1> of sequential type is unconnected in block <SDRAM>.
+WARNING:Xst:2677 - Node <startup_1> of sequential type is unconnected in block <CacheController>.
+
+Synthesizing (advanced) Unit <CacheController>.
+INFO:Xst:3231 - The small RAM <Mram_sTAG> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <_cmp_eq0000>   | low      |
+    |     addrA          | connected to signal <Cpu_Index_Sig> |          |
+    |     diA            | connected to internal node          |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <CacheController> synthesized (advanced).
+WARNING:Xst:2677 - Node <counter_1> of sequential type is unconnected in block <SDRAMController>.
+WARNING:Xst:2677 - Node <startup_1> of sequential type is unconnected in block <CacheController>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# RAMs                                                 : 1
+ 8x8-bit single-port distributed RAM                   : 1
+# ROMs                                                 : 1
+ 8x25-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 1696
+ Flip-Flops                                            : 1696
+# Latches                                              : 2
+ 1-bit latch                                           : 2
+# Comparators                                          : 2
+ 32-bit comparator greatequal                          : 1
+ 8-bit comparator equal                                : 1
+# Multiplexers                                         : 234
+ 1-bit 32-to-1 multiplexer                             : 8
+ 1-bit 8-to-1 multiplexer                              : 226
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch counter_0 hinder the constant cleaning in the block SDRAMController.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1426 - The value init of the FF/Latch startup_0 hinder the constant cleaning in the block CacheController.
+   You should achieve better results by setting this init to 0.
+WARNING:Xst:1710 - FF/Latch <state_3> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <offset_counter_5> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_6> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_7> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_8> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_9> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_10> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_11> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_12> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_13> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_14> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_15> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_16> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_17> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_18> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_19> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_20> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_21> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_22> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_23> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_24> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_25> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_26> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_27> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_28> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_29> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_30> of sequential type is unconnected in block <CacheController>.
+WARNING:Xst:2677 - Node <offset_counter_31> of sequential type is unconnected in block <CacheController>.
+
+Optimizing unit <CacheController> ...
+
+Optimizing unit <CPU_gen> ...
+
+Optimizing unit <SDRAMController> ...
+WARNING:Xst:1710 - FF/Latch <Cpu_Index_Sig_2> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Cpu_Index_Sig_0> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Cpu_Tag_Sig_7> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Cpu_Tag_Sig_3> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DirtyByte_5> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DirtyByte_4> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DirtyByte_3> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DirtyByte_1> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SDRAM_ADD_7> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SDRAM_ADD_5> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ValidByte_7> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ValidByte_6> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ValidByte_5> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sADD_7> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ValidByte_4> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ValidByte_3> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sADD_5> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <ValidByte_1> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SDRAM_ADD_15> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <SDRAM_ADD_11> (without init value) has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DirtyByte_7> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <DirtyByte_6> has a constant value of 0 in block <CacheController>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<7>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<6>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<5>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<4>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<3>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<2>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<1>> driven by black box <SRAM>. Possible simulation mismatch.
+WARNING:Xst:2036 - Inserting OBUF on port <SRAM_Dout_Comp<0>> driven by black box <SRAM>. Possible simulation mismatch.
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <Cpu_Tag_Sig_0> in Unit <CacheController> is equivalent to the following FF/Latch, which will be removed : <Cpu_Tag_Sig_4> 
+INFO:Xst:2261 - The FF/Latch <Cpu_Tag_Sig_1> in Unit <CacheController> is equivalent to the following FF/Latch, which will be removed : <Cpu_Tag_Sig_5> 
+INFO:Xst:2261 - The FF/Latch <Cpu_Tag_Sig_2> in Unit <CacheController> is equivalent to the following FF/Latch, which will be removed : <Cpu_Tag_Sig_6> 
+Found area constraint ratio of 100 (+ 5) on block CacheController, actual ratio is 43.
+FlipFlop SDRAM_ADD_12 has been replicated 1 time(s)
+FlipFlop SDRAM_ADD_13 has been replicated 3 time(s)
+FlipFlop SDRAM_ADD_14 has been replicated 1 time(s)
+FlipFlop myCPU_gen/patCtrl_1 has been replicated 1 time(s)
+FlipFlop myCPU_gen/patCtrl_2 has been replicated 1 time(s)
+Latch myCPU_gen/cs has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1691
+ Flip-Flops                                            : 1691
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CacheController.ngr
+Top Level Output File Name         : CacheController
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 93
+
+Cell Usage :
+# BELS                             : 4363
+#      GND                         : 1
+#      INV                         : 6
+#      LUT1                        : 67
+#      LUT2                        : 457
+#      LUT2_D                      : 5
+#      LUT3                        : 995
+#      LUT3_D                      : 23
+#      LUT3_L                      : 32
+#      LUT4                        : 1578
+#      LUT4_D                      : 229
+#      LUT4_L                      : 6
+#      MUXCY                       : 84
+#      MUXF5                       : 523
+#      MUXF6                       : 260
+#      MUXF7                       : 18
+#      MUXF8                       : 9
+#      VCC                         : 1
+#      XORCY                       : 69
+# FlipFlops/Latches                : 1694
+#      FD                          : 53
+#      FDC                         : 5
+#      FDE                         : 1567
+#      FDP                         : 1
+#      FDPE                        : 5
+#      FDRE                        : 32
+#      FDS                         : 28
+#      LD                          : 3
+# RAMS                             : 8
+#      RAM16X1S                    : 8
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 92
+#      OBUF                        : 92
+# Others                           : 4
+#      icon                        : 1
+#      ila                         : 1
+#      SRAM                        : 1
+#      vio                         : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                     1835  out of   4656    39%  
+ Number of Slice Flip Flops:           1693  out of   9312    18%  
+ Number of 4 input LUTs:               3406  out of   9312    36%  
+    Number used as logic:              3398
+    Number used as RAMs:                  8
+ Number of IOs:                          93
+ Number of bonded IOBs:                  93  out of    232    40%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+--------------------------------------------------+--------------------------+-------+
+Clock Signal                                      | Clock buffer(FF name)    | Load  |
+--------------------------------------------------+--------------------------+-------+
+clk                                               | BUFGP                    | 1699  |
+myCPU_gen/updPat_or0000(myCPU_gen/updPat_or0000:O)| NONE(*)(myCPU_gen/updPat)| 3     |
+--------------------------------------------------+--------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------+-------+
+Control Signal                     | Buffer(FF name)          | Load  |
+-----------------------------------+--------------------------+-------+
+vioOut<0>(myvio:ASYNC_OUT<0>)      | NONE(myCPU_gen/patCtrl_0)| 11    |
+-----------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 6.937ns (Maximum Frequency: 144.149MHz)
+   Minimum input arrival time before clock: 1.361ns
+   Maximum output required time after clock: 6.008ns
+   Maximum combinational path delay: 3.620ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.937ns (frequency: 144.149MHz)
+  Total number of paths / destination ports: 43194 / 3364
+-------------------------------------------------------------------------
+Delay:               6.937ns (Levels of Logic = 11)
+  Source:            counter_8 (FF)
+  Destination:       sDin_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: counter_8 to sDin_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.514   0.603  counter_8 (counter_8)
+     LUT4:I0->O            1   0.612   0.000  counter_cmp_eq0000_wg_lut<0> (counter_cmp_eq0000_wg_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  counter_cmp_eq0000_wg_cy<0> (counter_cmp_eq0000_wg_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  counter_cmp_eq0000_wg_cy<1> (counter_cmp_eq0000_wg_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  counter_cmp_eq0000_wg_cy<2> (counter_cmp_eq0000_wg_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  counter_cmp_eq0000_wg_cy<3> (counter_cmp_eq0000_wg_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  counter_cmp_eq0000_wg_cy<4> (counter_cmp_eq0000_wg_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  counter_cmp_eq0000_wg_cy<5> (counter_cmp_eq0000_wg_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  counter_cmp_eq0000_wg_cy<6> (counter_cmp_eq0000_wg_cy<6>)
+     MUXCY:CI->O          22   0.399   0.992  counter_cmp_eq0000_wg_cy<7> (counter_cmp_eq0000)
+     LUT4_D:I3->O          9   0.612   0.727  SDRAM_W_R_mux000011 (N15)
+     LUT4:I2->O            1   0.612   0.357  sDin_mux0000<4>_SW0 (N68)
+     FDS:S                     0.795          sDin_4
+    ----------------------------------------
+    Total                      6.937ns (4.258ns logic, 2.680ns route)
+                                       (61.4% logic, 38.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Offset:              1.361ns (Levels of Logic = 1)
+  Source:            mySRAM:douta<0> (PAD)
+  Destination:       Cpu_Din_Sig_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: mySRAM:douta<0> to Cpu_Din_Sig_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    SRAM:douta<0>          3   0.000   0.481  mySRAM (SRAM_Dout_Comp_0_OBUF)
+     LUT4:I2->O            1   0.612   0.000  Cpu_Din_Sig_mux0001<7>1 (Cpu_Din_Sig_mux0001<7>)
+     FDE:D                     0.268          Cpu_Din_Sig_0
+    ----------------------------------------
+    Total                      1.361ns (0.880ns logic, 0.481ns route)
+                                       (64.6% logic, 35.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'myCPU_gen/updPat_or0000'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              4.114ns (Levels of Logic = 1)
+  Source:            myCPU_gen/cs_1 (LATCH)
+  Destination:       Cache_CS_Comp (PAD)
+  Source Clock:      myCPU_gen/updPat_or0000 falling
+
+  Data Path: myCPU_gen/cs_1 to Cache_CS_Comp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.588   0.357  myCPU_gen/cs_1 (myCPU_gen/cs_1)
+     OBUF:I->O                 3.169          Cache_CS_Comp_OBUF (Cache_CS_Comp)
+    ----------------------------------------
+    Total                      4.114ns (3.757ns logic, 0.357ns route)
+                                       (91.3% logic, 8.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 217 / 159
+-------------------------------------------------------------------------
+Offset:              6.008ns (Levels of Logic = 2)
+  Source:            myCPU_gen/patCtrl_2 (FF)
+  Destination:       Cache_Addr_Comp<14> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: myCPU_gen/patCtrl_2 to Cache_Addr_Comp<14>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDPE:C->Q            21   0.514   1.111  myCPU_gen/patCtrl_2 (myCPU_gen/patCtrl_2)
+     LUT3:I0->O            7   0.612   0.602  myCPU_gen/patOut<23>1 (Cache_SRAMAddr_Comp_2_OBUF)
+     OBUF:I->O                 3.169          Cache_Addr_Comp_14_OBUF (Cache_Addr_Comp<14>)
+    ----------------------------------------
+    Total                      6.008ns (4.295ns logic, 1.713ns route)
+                                       (71.5% logic, 28.5% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 19 / 19
+-------------------------------------------------------------------------
+Delay:               3.620ns (Levels of Logic = 1)
+  Source:            mySRAM:douta<7> (PAD)
+  Destination:       SRAM_Dout_Comp<7> (PAD)
+
+  Data Path: mySRAM:douta<7> to SRAM_Dout_Comp<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+    SRAM:douta<7>          3   0.000   0.451  mySRAM (SRAM_Dout_Comp_7_OBUF)
+     OBUF:I->O                 3.169          SRAM_Dout_Comp_7_OBUF (SRAM_Dout_Comp<7>)
+    ----------------------------------------
+    Total                      3.620ns (3.169ns logic, 0.451ns route)
+                                       (87.5% logic, 12.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 26.00 secs
+Total CPU time to Xst completion: 24.40 secs
+ 
+--> 
+
+
+Total memory usage is 703996 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   96 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+

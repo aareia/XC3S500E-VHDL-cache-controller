@@ -1,0 +1,15 @@
+[Inputs]
+clk
+WRRDin
+CS
+=ADDin[15:0]=
+[Outputs]
+WRRDout
+MSTRB
+WEN
+DinEn
+DoutEn
+Rdy
+=ADDout[15:0]=
+=ADDC[7:0]=
+[BiDir]
